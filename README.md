@@ -1,0 +1,1 @@
+Challenge no 3 tentang projek PlatformIO dengan target board Espressif ESP32 Dev Module dan menggunakan framework ESP-IDF. Pada file main.c, terdapat program dari tugas 1 dan 2 yang telah disesuaikan agar dapat berjalan dalam satu file main.c dalam PlatformIO
