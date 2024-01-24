@@ -28,7 +28,7 @@ void led_control_task(void *pvParameters) {
 }
 
 void app_main() {
-    gpio_pad_select_gpio(LED_GPIO);
+    esp_rom_gpio_pad_select_gpio(LED_GPIO);
     gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
 
     xTaskCreate(&led_control_task, "led_control_task", 2048, NULL, 5, NULL);
