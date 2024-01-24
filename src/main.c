@@ -69,7 +69,7 @@ void pola_alphabet(void *pvParameters) {
         // Bebaskan memori yang telah dialokasikan di heap
         free(alphabet);
     }
-    
+
     }
 
 void app_main() {
@@ -78,5 +78,5 @@ void app_main() {
 
     xTaskCreate(&led_control_task, "led_control_task", 2048, NULL, 5, NULL);
 
-    xTaskCreate(pola_alphabet, "pola_alphabet_task", 2048, NULL, 1, NULL);
+    xTaskCreate(&pola_alphabet, "pola_alphabet_task", 2048, NULL, 1, NULL);
 }
